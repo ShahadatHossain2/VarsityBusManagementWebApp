@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E577C5FC-1843-40EE-8A93-97002F3193C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VarsityBusManagementWebApp</RootNamespace>
+    <AssemblyName>VarsityBusManagementWebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Style\css\bootstrap.min.css" />
+    <Content Include="Style\css\font-awesome.min.css" />
+    <Content Include="Style\css\style.css" />
+    <Content Include="Style\Edit\css\animate.min.css" />
+    <Content Include="Style\Edit\css\bootstrap.min.css" />
+    <Content Include="Style\Edit\css\jquery-ui.css" />
+    <Content Include="Style\Edit\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Style\Edit\css\meanmenu.css" />
+    <Content Include="Style\Edit\css\nice-select.css" />
+    <Content Include="Style\Edit\css\normalize.css" />
+    <Content Include="Style\Edit\css\owl.carousel.min.css" />
+    <Content Include="Style\Edit\css\responsive.css" />
+    <Content Include="Style\Edit\css\slick.css" />
+    <Content Include="Style\Edit\css\style.css" />
+    <Content Include="Style\Edit\icon\1.png" />
+    <Content Include="Style\Edit\icon\2.png" />
+    <Content Include="Style\Edit\icon\3.png" />
+    <Content Include="Style\Edit\icon\fb.png" />
+    <Content Include="Style\Edit\icon\instagram.png" />
+    <Content Include="Style\Edit\icon\lin %282%29.png" />
+    <Content Include="Style\Edit\icon\tw.png" />
+    <Content Include="Style\Edit\images\1.png" />
+    <Content Include="Style\Edit\images\2.png" />
+    <Content Include="Style\Edit\images\3.jpg" />
+    <Content Include="Style\Edit\images\about-bg.png" />
+    <Content Include="Style\Edit\images\banner1.jpeg" />
+    <Content Include="Style\Edit\images\banner2.jpg" />
+    <Content Include="Style\Edit\images\loading.gif" />
+    <Content Include="Style\Edit\images\search_icon.png" />
+    <Content Include="Style\Edit\js\bootstrap.bundle.min.js" />
+    <Content Include="Style\Edit\js\custom.js" />
+    <Content Include="Style\Edit\js\jquery-3.0.0.min.js" />
+    <Content Include="Style\Edit\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Style\Edit\js\jquery.min.js" />
+    <Content Include="Style\Edit\js\jquery.validate.js" />
+    <Content Include="Style\Edit\js\plugin.js" />
+    <Content Include="Style\Edit\js\popper.min.js" />
+    <Content Include="Style\Edit\slidenav.css" />
+    <Content Include="Style\Edit\textarea.css" />
+    <Content Include="Style\Image\wpid-transport-of-iiuc-jpg.jpeg" />
+    <Content Include="Style\img1.jpg" />
+    <Content Include="Style\img2.jpg" />
+    <Content Include="Style\Login1\css\main.css" />
+    <Content Include="Style\Login1\css\util.css" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Style\Login1\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="Style\Login1\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="Style\Login1\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Style\Login1\images\bg-01.jpg" />
+    <Content Include="Style\Login1\images\icons\favicon.ico" />
+    <Content Include="Style\Login1\js\main.js" />
+    <Content Include="Style\Login1\vendor\animate\animate.css" />
+    <Content Include="Style\Login1\vendor\animsition\css\animsition.css" />
+    <Content Include="Style\Login1\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Style\Login1\vendor\animsition\js\animsition.js" />
+    <Content Include="Style\Login1\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Style\Login1\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Style\Login1\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Style\Login1\vendor\bootstrap\js\popper.js" />
+    <Content Include="Style\Login1\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Style\Login1\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Style\Login1\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Style\Login1\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Style\Login1\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Style\Login1\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Style\Login1\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Style\Login1\vendor\daterangepicker\moment.js" />
+    <Content Include="Style\Login1\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Style\Login1\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Style\Login1\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Style\Login1\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Style\Login1\vendor\select2\select2.css" />
+    <Content Include="Style\Login1\vendor\select2\select2.js" />
+    <Content Include="Style\Login1\vendor\select2\select2.min.css" />
+    <Content Include="Style\Login1\vendor\select2\select2.min.js" />
+    <Content Include="Style\Login\css\main.css" />
+    <Content Include="Style\Login\css\util.css" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Style\Login\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="Style\Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="Style\Login\images\bg-.jpg" />
+    <Content Include="Style\Login\images\bg-01.jpg" />
+    <Content Include="Style\Login\images\icons\favicon.ico" />
+    <Content Include="Style\Login\images\icons\map-marker.png" />
+    <Content Include="Style\Login\js\main.js" />
+    <Content Include="Style\Login\js\map-custom.js" />
+    <Content Include="Style\Login\vendor\animate\animate.css" />
+    <Content Include="Style\Login\vendor\animsition\css\animsition.css" />
+    <Content Include="Style\Login\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Style\Login\vendor\animsition\js\animsition.js" />
+    <Content Include="Style\Login\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Style\Login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Style\Login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Style\Login\vendor\bootstrap\js\popper.js" />
+    <Content Include="Style\Login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Style\Login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Style\Login\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Style\Login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Style\Login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Style\Login\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Style\Login\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Style\Login\vendor\daterangepicker\moment.js" />
+    <Content Include="Style\Login\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Style\Login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Style\Login\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Style\Login\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Style\Login\vendor\select2\select2.css" />
+    <Content Include="Style\Login\vendor\select2\select2.js" />
+    <Content Include="Style\Login\vendor\select2\select2.min.css" />
+    <Content Include="Style\Login\vendor\select2\select2.min.js" />
+    <Content Include="Style\Main\fonts\fontawesome-webfont.eot" />
+    <Content Include="Style\Main\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Style\Main\fonts\fontawesome-webfont.woff" />
+    <Content Include="Style\Main\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Style\Main\fonts\FontAwesome.otf" />
+    <Content Include="Style\Main\fonts\Plain-Bold.woff" />
+    <Content Include="Style\Main\fonts\Plain-Bold.woff2" />
+    <Content Include="Style\Main\fonts\Plain-Light.woff" />
+    <Content Include="Style\Main\fonts\Plain-Light.woff2" />
+    <Content Include="Style\Main\fonts\Plain-Regular.woff" />
+    <Content Include="Style\Main\fonts\Plain-Regular.woff2" />
+    <Content Include="Style\Main\images\hero-bg.JPG" />
+    <Content Include="Style\Menu\fonts\codropsicons\codropsicons.eot" />
+    <Content Include="Style\Menu\fonts\codropsicons\codropsicons.ttf" />
+    <Content Include="Style\Menu\fonts\codropsicons\codropsicons.woff" />
+    <Content Include="Style\New\css\animate.css" />
+    <Content Include="Style\New\css\bootstrap-grid.css" />
+    <Content Include="Style\New\css\bootstrap-grid.min.css" />
+    <Content Include="Style\New\css\bootstrap-reboot.css" />
+    <Content Include="Style\New\css\bootstrap-reboot.min.css" />
+    <Content Include="Style\New\css\bootstrap-select.css" />
+    <Content Include="Style\New\css\bootstrap.css" />
+    <Content Include="Style\New\css\bootstrap.min.css" />
+    <Content Include="Style\New\css\colors1.css" />
+    <Content Include="Style\New\css\colors1_dark.css" />
+    <Content Include="Style\New\css\colors2.css" />
+    <Content Include="Style\New\css\colors3.css" />
+    <Content Include="Style\New\css\colors_landing_page.css" />
+    <Content Include="Style\New\css\custom.css" />
+    <Content Include="Style\New\css\dark_layout.css" />
+    <Content Include="Style\New\css\font-awesome.css" />
+    <Content Include="Style\New\css\font-awesome.min.css" />
+    <Content Include="Style\New\css\hizoom.css" />
+    <Content Include="Style\New\css\owl.carousel.css" />
+    <Content Include="Style\New\css\owl.carousel.min.css" />
+    <Content Include="Style\New\css\owl.theme.default.css" />
+    <Content Include="Style\New\css\responsive.css" />
+    <Content Include="Style\New\css\style.css" />
+    <Content Include="Style\New\fonts\fontawesome-webfont.svg" />
+    <Content Include="Style\New\images\fevicon\fevicon.png" />
+    <Content Include="Style\New\images\gradian_black.png" />
+    <Content Include="Style\New\images\gradian_blue.png" />
+    <Content Include="Style\New\images\it_service\select1.jpg" />
+    <Content Include="Style\New\images\it_service\select2.jpg" />
+    <Content Include="Style\New\images\it_service\select3.jpg" />
+    <Content Include="Style\New\images\loaders\loader_1.png" />
+    <Content Include="Style\New\images\logos\IIUC.PNG" />
+    <Content Include="Style\New\js\bootstrap.min.js" />
+    <Content Include="Style\New\js\custom.js" />
+    <Content Include="Style\New\js\hizoom.js" />
+    <Content Include="Style\New\js\jquery.min.js" />
+    <Content Include="Style\New\js\menumaker.js" />
+    <Content Include="Style\New\js\wow.js" />
+    <Content Include="Style\New\revolution\assets\coloredbg.png" />
+    <Content Include="Style\New\revolution\assets\gridtile.png" />
+    <Content Include="Style\New\revolution\assets\gridtile_3x3.png" />
+    <Content Include="Style\New\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="Style\New\revolution\assets\gridtile_white.png" />
+    <Content Include="Style\New\revolution\assets\loader.gif" />
+    <Content Include="Style\New\revolution\css\closedhand.cur" />
+    <Content Include="Style\New\revolution\css\layers.css" />
+    <Content Include="Style\New\revolution\css\navigation.css" />
+    <Content Include="Style\New\revolution\css\openhand.cur" />
+    <Content Include="Style\New\revolution\css\settings.css" />
+    <Content Include="Style\New\revolution\fonts\revicons\revicons.svg" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="Style\New\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="Style\New\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Style\New\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="UI\AddDeptUI.aspx" />
+    <Content Include="UI\AddPickupPointUI.aspx" />
+    <Content Include="UI\CheckStatusUI.aspx" />
+    <Content Include="UI\ClassRoutin.aspx" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Style\Login\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Style\Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="Style\Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="Style\Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="Style\Login\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Style\Login\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Style\Login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Style\Login1\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Style\Login1\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Style\Login1\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Style\Login1\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Style\Login1\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Style\Login1\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Style\Login1\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Style\New\fonts\fontawesome-webfont.eot" />
+    <Content Include="Style\New\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Style\New\fonts\fontawesome-webfont.woff" />
+    <Content Include="Style\New\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Style\New\fonts\FontAwesome.otf" />
+    <Content Include="Style\New\revolution\fonts\revicons\revicons.eot" />
+    <Content Include="Style\New\revolution\fonts\revicons\revicons.ttf" />
+    <Content Include="Style\New\revolution\fonts\revicons\revicons.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Style\avatar2.png" />
+    <Content Include="Style\Grid.css" />
+    <Content Include="Style\Login.css" />
+    <Content Include="Style\LoginNavBar.css" />
+    <Content Include="Style\Main\css\aos.css" />
+    <Content Include="Style\Main\css\bootstrap.min.css" />
+    <Content Include="Style\Main\css\font-awesome.min.css" />
+    <Content Include="Style\Main\css\tooplate-gymso-style.css" />
+    <Content Include="Style\Main\fonts\fontawesome-webfont.svg" />
+    <Content Include="Style\Main\images\class\cardio-class.jpg" />
+    <Content Include="Style\Main\images\class\crossfit-class.jpg" />
+    <Content Include="Style\Main\images\class\yoga-class.jpg" />
+    <Content Include="Style\Main\images\team\team-image.jpg" />
+    <Content Include="Style\Main\images\team\team-image01.jpg" />
+    <Content Include="Style\Main\js\aos.js" />
+    <Content Include="Style\Main\js\bootstrap.min.js" />
+    <Content Include="Style\Main\js\custom.js" />
+    <Content Include="Style\Main\js\jquery.min.js" />
+    <Content Include="Style\Main\js\smoothscroll.js" />
+    <Content Include="Style\mdtimepicker.css" />
+    <Content Include="Style\mdtimepicker.js" />
+    <Content Include="Style\mdtimepicker.min.css" />
+    <Content Include="Style\mdtimepicker.min.js" />
+    <Content Include="Style\Menu\css\component1.css" />
+    <Content Include="Style\Menu\css\component2.css" />
+    <Content Include="Style\Menu\css\demo.css" />
+    <Content Include="Style\Menu\css\normalize.css" />
+    <Content Include="Style\Menu\fonts\codropsicons\codropsicons.svg" />
+    <Content Include="Style\Menu\fonts\codropsicons\license.txt" />
+    <Content Include="Style\Menu\interactivedemo\css\main.css" />
+    <Content Include="Style\Menu\interactivedemo\index.html" />
+    <Content Include="Style\Menu\interactivedemo\js\main.js" />
+    <Content Include="Style\Menu\interactivedemo\js\vendor\jquery-1.10.1.min.js" />
+    <Content Include="Style\Menu\interactivedemo\js\vendor\modernizr-2.6.2.min.js" />
+    <Content Include="Style\Menu\js\demo1.js" />
+    <Content Include="Style\Menu\js\demo2.js" />
+    <Content Include="Style\Menu\js\modernizr-2.6.2.min.js" />
+    <Content Include="Style\Menu\js\polyfills.js" />
+    <Content Include="Style\Of.png" />
+    <Content Include="UI\BusScheduleUI.aspx" />
+    <Content Include="UI\EmergencyBusSchedule.aspx" />
+    <Content Include="UI\EmergencyUI.aspx" />
+    <Content Include="UI\ExamBusScheduleUI.aspx" />
+    <Content Include="UI\FeedbackUI.aspx" />
+    <Content Include="UI\FemaleBusSchedule.aspx" />
+    <Content Include="UI\IndexUI.aspx" />
+    <Content Include="UI\LocationUpdateUI.aspx" />
+    <Content Include="UI\MastersBusScheduleUI.aspx" />
+    <Content Include="UI\MaxBusNeed.aspx" />
+    <Content Include="UI\NoticeUI.aspx" />
+    <Content Include="UI\OfficeLoginUI.aspx" />
+    <Content Include="UI\OfficeUI.aspx" />
+    <Content Include="UI\RequermentUI.aspx" />
+    <Content Include="UI\RoutineViewUI.aspx" />
+    <Content Include="UI\RutinUI.aspx" />
+    <Content Include="UI\ScheduleUI.aspx" />
+    <Content Include="UI\ScheduleUpdate.aspx" />
+    <Content Include="UI\StudentInfoUpdate.aspx" />
+    <Content Include="UI\StudentLogin.aspx" />
+    <Content Include="UI\StudentMenu.aspx" />
+    <Content Include="UI\StudentUI.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BusScheduleManager.cs" />
+    <Compile Include="BLL\FeedbackManager.cs" />
+    <Compile Include="BLL\RequermentManager.cs" />
+    <Compile Include="BLL\RutinManager.cs" />
+    <Compile Include="BLL\ScheduleManager.cs" />
+    <Compile Include="BLL\StudentInfoUpdateManager.cs" />
+    <Compile Include="BLL\StudentLoginManager.cs" />
+    <Compile Include="BLL\StudentManager.cs" />
+    <Compile Include="BLL\UnassignManager.cs" />
+    <Compile Include="DAL\Gateway\BaseGateway.cs" />
+    <Compile Include="DAL\Gateway\BusScheduleGateway.cs" />
+    <Compile Include="DAL\Gateway\FeedbackGateway.cs" />
+    <Compile Include="DAL\Gateway\RequermentGateway.cs" />
+    <Compile Include="DAL\Gateway\RutinGateway.cs" />
+    <Compile Include="DAL\Gateway\ScheduleGateway.cs" />
+    <Compile Include="DAL\Gateway\StudentGateway.cs" />
+    <Compile Include="DAL\Gateway\StudentInfoUpdateGateway.cs" />
+    <Compile Include="DAL\Gateway\StudentLoginGateway.cs" />
+    <Compile Include="DAL\Gateway\UnassignGateway.cs" />
+    <Compile Include="DAL\Model\BusNeedView.cs" />
+    <Compile Include="DAL\Model\BusSchedule.cs" />
+    <Compile Include="DAL\Model\Department.cs" />
+    <Compile Include="DAL\Model\Feedback.cs" />
+    <Compile Include="DAL\Model\Pickup.cs" />
+    <Compile Include="DAL\Model\Requerment.cs" />
+    <Compile Include="DAL\Model\Rutin.cs" />
+    <Compile Include="DAL\Model\Schedule.cs" />
+    <Compile Include="DAL\Model\Student.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AddDeptUI.aspx.cs">
+      <DependentUpon>AddDeptUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddDeptUI.aspx.designer.cs">
+      <DependentUpon>AddDeptUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddPickupPointUI.aspx.cs">
+      <DependentUpon>AddPickupPointUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddPickupPointUI.aspx.designer.cs">
+      <DependentUpon>AddPickupPointUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BusScheduleUI.aspx.cs">
+      <DependentUpon>BusScheduleUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BusScheduleUI.aspx.designer.cs">
+      <DependentUpon>BusScheduleUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CheckStatusUI.aspx.cs">
+      <DependentUpon>CheckStatusUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CheckStatusUI.aspx.designer.cs">
+      <DependentUpon>CheckStatusUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ClassRoutin.aspx.cs">
+      <DependentUpon>ClassRoutin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ClassRoutin.aspx.designer.cs">
+      <DependentUpon>ClassRoutin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EmergencyBusSchedule.aspx.cs">
+      <DependentUpon>EmergencyBusSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EmergencyBusSchedule.aspx.designer.cs">
+      <DependentUpon>EmergencyBusSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EmergencyUI.aspx.cs">
+      <DependentUpon>EmergencyUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EmergencyUI.aspx.designer.cs">
+      <DependentUpon>EmergencyUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExamBusScheduleUI.aspx.cs">
+      <DependentUpon>ExamBusScheduleUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ExamBusScheduleUI.aspx.designer.cs">
+      <DependentUpon>ExamBusScheduleUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FeedbackUI.aspx.cs">
+      <DependentUpon>FeedbackUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FeedbackUI.aspx.designer.cs">
+      <DependentUpon>FeedbackUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FemaleBusSchedule.aspx.cs">
+      <DependentUpon>FemaleBusSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FemaleBusSchedule.aspx.designer.cs">
+      <DependentUpon>FemaleBusSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IndexUI.aspx.cs">
+      <DependentUpon>IndexUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\IndexUI.aspx.designer.cs">
+      <DependentUpon>IndexUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LocationUpdateUI.aspx.cs">
+      <DependentUpon>LocationUpdateUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\LocationUpdateUI.aspx.designer.cs">
+      <DependentUpon>LocationUpdateUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MastersBusScheduleUI.aspx.cs">
+      <DependentUpon>MastersBusScheduleUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\MastersBusScheduleUI.aspx.designer.cs">
+      <DependentUpon>MastersBusScheduleUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MaxBusNeed.aspx.cs">
+      <DependentUpon>MaxBusNeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\MaxBusNeed.aspx.designer.cs">
+      <DependentUpon>MaxBusNeed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NoticeUI.aspx.cs">
+      <DependentUpon>NoticeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NoticeUI.aspx.designer.cs">
+      <DependentUpon>NoticeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OfficeLoginUI.aspx.cs">
+      <DependentUpon>OfficeLoginUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\OfficeLoginUI.aspx.designer.cs">
+      <DependentUpon>OfficeLoginUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OfficeUI.aspx.cs">
+      <DependentUpon>OfficeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\OfficeUI.aspx.designer.cs">
+      <DependentUpon>OfficeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RequermentUI.aspx.cs">
+      <DependentUpon>RequermentUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\RequermentUI.aspx.designer.cs">
+      <DependentUpon>RequermentUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RoutineViewUI.aspx.cs">
+      <DependentUpon>RoutineViewUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\RoutineViewUI.aspx.designer.cs">
+      <DependentUpon>RoutineViewUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RutinUI.aspx.cs">
+      <DependentUpon>RutinUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\RutinUI.aspx.designer.cs">
+      <DependentUpon>RutinUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ScheduleUI.aspx.cs">
+      <DependentUpon>ScheduleUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ScheduleUI.aspx.designer.cs">
+      <DependentUpon>ScheduleUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ScheduleUpdate.aspx.cs">
+      <DependentUpon>ScheduleUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ScheduleUpdate.aspx.designer.cs">
+      <DependentUpon>ScheduleUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentInfoUpdate.aspx.cs">
+      <DependentUpon>StudentInfoUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\StudentInfoUpdate.aspx.designer.cs">
+      <DependentUpon>StudentInfoUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentLogin.aspx.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\StudentLogin.aspx.designer.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentMenu.aspx.cs">
+      <DependentUpon>StudentMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\StudentMenu.aspx.designer.cs">
+      <DependentUpon>StudentMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentUI.aspx.cs">
+      <DependentUpon>StudentUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\StudentUI.aspx.designer.cs">
+      <DependentUpon>StudentUI.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+    <Folder Include="UI\ClassRoutine\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28137</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:28137/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
